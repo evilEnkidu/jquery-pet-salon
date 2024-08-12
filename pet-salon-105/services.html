@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The FashionPet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6814d427e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="flex-navbar">
+            <div class="title-container">
+            <h1 class="logo">THE FashionPet</h1>
+        </div>  
+            <a href="./index.html" class="flex-link">Home</a>
+            <a href="./services.html" class="flex-link">Services</a>
+            <a href="./register.html" class="flex-link">Register Your Pet</a>
+        </nav>
+    </header>
+    <main class="main">
+    <div class="container">
+        <div class="title">Add a Service</div>
+        <form action="#" id="service-form">
+            <div class="error-container"></div>
+            <div class="service-details">
+                <div class="input-box">
+                    <span class="details">Service Name:</span>
+                    <input type="text" placeholder="Name of the new service" id="nameInput">
+                </div>
+                <div class="input-box">
+                    <span class="details">Service Description:</span>
+                    <input type="text" placeholder="Brief description of the service" id="descriptionInput">
+                </div>
+                <div class="input-box">
+                    <span class="details">Service Price:</span>
+                    <input type="number" placeholder="Price for the new service" id="priceInput">
+                    
+                </div>
+                <div class="input-box">
+                    <span class="details">Icon Link (optional):</span>
+                    <input type="url" placeholder="URL" id="urlInput">
+                </div>
+            </div>
+            <div class="button">
+                <button onclick="addService();" type="button">Register</button>
+            </div>
+        </form>
+    </div>
+</main>
+<div class="service-container">
+    <h2 class="logo">Our Services</h2>
+    <div class="first-row">
+        <div class="service">
+            <i class="fa-solid fa-heart"></i>
+            <h3>Health Checkups</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ratione exercitationem </p>
+            <p class="price">$30</p>
+        </div>        
+        <div class="service">
+            <i class="fa-solid fa-scissors"></i>
+            <h3>Pet Grooming</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ratione exercitationem </p>
+            <p class="price">$65</p>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-house"></i>
+            <h3>Pet Boarding</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ratione exercitationem </p>
+            <p class="price">$25 per night</p>
+        </div>
+    </div>
+    <div class="row">
+        
+    </div>
+</div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./services.js"></script>
+</html>

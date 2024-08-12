@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding-right: 10px;
+}
+a:hover{
+    text-decoration: underline;
+}
+.main{
+    display: flex;
+    height: 65vh;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #95eaff, #fff4ab);
+}
+.logo{
+    font-family: "Pacifico", cursive;
+}
+.site-header{
+    padding: 50px 30px;
+    background: linear-gradient(-135deg, #ffe554, #ffd2a0);
+}
+.header-links{
+    padding-left: 35px;
+}
+.container{
+    padding: 20px 25px;
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+}
+.container
+ .title{
+    font-size: 25px;
+    font-weight: 500px;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #CAF4FF, #FFF9D0);
+}
+.container form .pet-details{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+form .pet-details .input-box{
+    margin: 20px 0 12px 0; 
+    width: calc(100%/2-20px);
+}
+.pet-details .input-box .details{
+    display: block;
+    font-weight: 500px;
+    margin-bottom: 5px;
+}
+.pet-details .input-box input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 20px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.pet-details .input-box input:focus,
+.pet-details .input-box input:valid{
+    border-color: #FFF9D0;
+}
+option{
+    
+    font-size: 20px;
+}
+select{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: white;
+    border-color: #ccc;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button button{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #CAF4FF, #FFF9D0);
+}
+form .button button:hover{
+    background: linear-gradient(-135deg, #CAF4FF, #FFF9D0);
+    cursor: pointer;
+}
+@media (max-width:584px){
+    .container{
+        max-width: 100%;
+    }
+    form .pet-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .pet-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .pet-details::-webkit-scrollbar{
+        width: 0;
+    }
+}
+#petsTotal{
+    font-size: medium;
+}
+.action{
+    text-align: center;
+}
+
